@@ -1,0 +1,12 @@
+---
+layout: default
+title: Tin tức mới
+permalink: /news
+---
+
+{% for post in site.posts limit:10 %}
+<div style="max-width: 800px; margin: 10px auto;">
+	<h2>Tin tức Global ICT mới nhất</h2>
+	<p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ post.url }}">{{ post.title }}</a></span></p>
+</div>
+{% endfor %}
