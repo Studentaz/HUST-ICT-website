@@ -8,19 +8,19 @@
   img {
     max-width: 100%;
   }
-  body {
-    background-position: center;
-    background-image: url('{{site.url}}{{site.baseurl}}/img/header.jpg');
-  }
   #post-wrapper {
     border-radius: 5px;
     background: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   .post-header {
     border-radius: 10px;
-    background-image: url('{{site.url}}{{site.baseurl}}/img/pheader.png');
+    background: -moz-linear-gradient(138deg, rgba(191,191,0,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(191,191,0,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(138deg, rgba(191,191,0,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(138deg, rgba(191,191,0,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(138deg, rgba(191,191,0,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+    background: linear-gradient(312deg, rgba(191,191,0,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#BFBF00',GradientType=1 ); /* ie6-9 */
     padding: 10px;
     color: #fff;
   }
@@ -41,8 +41,22 @@
     background: rgba(0,0,0,0.2);
     text-align: center;
   }
+
+   @media (min-width: 992px) {
+      #post-wrapper {
+        border-radius: 5px;
+        background: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      body {
+        background-position: center;
+        background-image: url('{{site.url}}{{site.baseurl}}/img/header.jpg');
+      }
+   }
+
   </style>
-  <div id="post-wrapper" class="col-md-10 col-md-offset-1">
+  <div id="post-wrapper" class="col-lg-10 col-lg-offset-1">
     {% include nav-page.html %}
       <div class="post-header">
       <h1 class="center-text">{{ page.title }}</h1>

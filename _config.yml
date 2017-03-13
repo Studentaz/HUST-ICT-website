@@ -2,7 +2,7 @@
 title: Global ICT Program
 email: linhtd@soict.hust.edu.vn
 description: "Chương trình đào tạo kỹ sư toàn cầu về công nghệ thông tin"
-baseurl: "/HUST-ICT-website" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://vietanhdev.com" # the base hostname & protocol for your site
 
 # Build settings
@@ -16,3 +16,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "+07:00" # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+gems:
+  - jekyll-paginate
