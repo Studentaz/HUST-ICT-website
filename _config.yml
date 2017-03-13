@@ -2,7 +2,7 @@
 title: Global ICT Program
 email: linhtd@soict.hust.edu.vn
 description: "Chương trình đào tạo kỹ sư toàn cầu về công nghệ thông tin"
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "/HUST-ICT-website" # the subpath of your site, e.g. /blog/
 url: "https://vietanhdev.com" # the base hostname & protocol for your site
 
 # Build settings
